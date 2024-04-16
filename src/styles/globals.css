@@ -1,0 +1,147 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none !important;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif !important;
+}
+/* ------------------------------------------ROOT--------------------------------------------------- */
+:root {
+  /* ------font-size--- */
+  --font-xs: 12px;
+  --font-s: 16px;
+  --font-sm: 18px;
+  --font-md: 24px;
+  --font-xlg: 32px;
+  --font-lg: 34px;
+  --font-xl: 40px;
+  --font-xxl: 56px;
+  /* ------color------- */
+  --primary-color: #131619;
+  --secondary-color: #0055b2;
+}
+.fs_xs {
+  font-size: var(--font-xs);
+}
+.fs_s {
+  font-size: var(--font-s);
+}
+.fs_sm {
+  font-size: var(--font-sm);
+}
+.fs_md {
+  font-size: var(--font-md);
+}
+.fs_xlg {
+  font-size: var(--font-xlg);
+}
+.fs_lg {
+  font-size: var(--font-lg);
+}
+.fs_xl {
+  font-size: var(--font-xl);
+}
+.fs_xxl {
+  font-size: var(--font-xxl);
+}
+/* ========================================COMMAN-CLASSES============================================= */
+.lh_100 {
+  line-height: 100%;
+}
+.lh_148 {
+  line-height: 148%;
+}
+.lh_122 {
+  line-height: 122%;
+}
+.lh_125 {
+  line-height: 125%;
+}
+.lh_170 {
+  line-height: 170%;
+}
+.lh_136 {
+  line-height: 136%;
+}
+.lh_150 {
+  line-height: 150%;
+}
+.lh_167 {
+  line-height: 167%;
+}
+.lh_134 {
+  line-height: 134%;
+}
+.lh_88 {
+  line-height: 88px;
+}
+.opacity_80 {
+  opacity: 80%;
+}
+.z_4 {
+  z-index: 4 !important;
+}
+.transition {
+  transition: all 0.3s linear !important;
+}
+.cursor_pointer {
+  cursor: pointer;
+}
+/* ==================================color================================= */
+.text_black01 {
+  color: #131619;
+}
+.text_blue {
+  color: #0055b2;
+}
+.text_black02 {
+  color: #03020d;
+}
+.text_grey {
+  color: #4a494e;
+}
+/* ==========================================header-section===================================== */
+
+/* ==========================================nav-tab============================================ */
+.tabbtn {
+  background: #f8dbeb;
+  border-left: 8px solid linear-gradient(97.1deg, #d0006f 4.95%, #0055b2 94.87%);
+}
+/* =========================================digital============================================= */
+.bg_pink {
+  background: #f8dbeb;
+}
+
+@media (max-width: 991px) {
+  .nav_bar {
+    position: fixed;
+    z-index: 4 !important;
+    background: linear-gradient(250deg, #35d3ff -0.64%, #a963fb 103.6%);
+    min-height: 100vh;
+    top: 0 !important;
+    width: 100%;
+  }
+  .overflow_hidden {
+    overflow: hidden !important;
+  }
+  .nav_bar > li > a:nth-last-child() {
+    font-size: 22px !important;
+  }
+  .left_neg_100 {
+    left: -100%;
+  }
+  .cross .crl_1 {
+    transform: rotate(50deg) translate(14px, 16px);
+  }
+  .cross .crl_2 {
+    opacity: 0;
+  }
+  .cross .crl_3 {
+    transform: rotate(-50deg) translateY(-97%);
+  }
+  .navline span {
+    width: 40px;
+    height: 4px;
+    border-radius: 3px;
+  }
+}
