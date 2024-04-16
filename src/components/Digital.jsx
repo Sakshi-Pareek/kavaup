@@ -4,9 +4,9 @@ import { Col, Container, Row } from "react-bootstrap";
 export default function Digital() {
   return (
     <>
-      <Container className="bg_pink mt-5">
-        <Row className=" justify-content-around">
-          <Col lg={3}>
+      <Container className="bg_pink my-5 pt-lg-5 pb-lg-0 py-5 custom_container">
+        <Row className="justify-content-around gap-lg-0 gap-5 mt-3">
+          <Col lg={3} className="text-lg-start text-center">
             <Image
               src="/assets/images/png/mobile.png"
               alt="mobile"
@@ -14,15 +14,23 @@ export default function Digital() {
               height={425}
             />
           </Col>
-
-          <Col lg={6}>
-            <h3 className="fw-semibold fs_xl text_black01 mb-4 pb-2">
+          <Col lg={6} className="text-lg-start text-center">
+            <h3 className="fw-semibold fs_xl text_black01 mb-lg-4 pb-lg-2 mb-3 pt-lg-3 lh_125">
               Take the Next Step in Your Digital Transformation
             </h3>
-            <p className="fw-normal fs_sm text_black01 ">
+            <p className="fw-normal fs_sm text_black01 pe-xl-5 me-xl-5 lh_200 mb-3">
               Concentrate on your brand, business, or project while we handle
               the software development.
             </p>
+            <p className="fw-medium text_blue fs_sm lh_200 mb-lg-4 pb-lg-2 mb-3">
+              Get in touch with Kava Up to learn more!
+            </p>
+            <a
+              href=""
+              className="text-white fs_sm fw-mediun contact_btn d-inline-block transition "
+            >
+              Contact Us
+            </a>
           </Col>
         </Row>
       </Container>

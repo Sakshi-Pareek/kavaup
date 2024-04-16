@@ -3,6 +3,7 @@
   margin: 0;
   text-decoration: none !important;
   box-sizing: border-box;
+  list-style-type: none !important;
   font-family: "Poppins", sans-serif !important;
 }
 /* ------------------------------------------ROOT--------------------------------------------------- */
@@ -16,9 +17,6 @@
   --font-lg: 34px;
   --font-xl: 40px;
   --font-xxl: 56px;
-  /* ------color------- */
-  --primary-color: #131619;
-  --secondary-color: #0055b2;
 }
 .fs_xs {
   font-size: var(--font-xs);
@@ -48,6 +46,15 @@
 .lh_100 {
   line-height: 100%;
 }
+.lh_117 {
+  line-height: 117%;
+}
+.lh_178 {
+  line-height: 178%;
+}
+.lh_200 {
+  line-height: 200%;
+}
 .lh_148 {
   line-height: 148%;
 }
@@ -71,9 +78,6 @@
 }
 .lh_134 {
   line-height: 134%;
-}
-.lh_88 {
-  line-height: 88px;
 }
 .opacity_80 {
   opacity: 80%;
@@ -100,18 +104,101 @@
 .text_grey {
   color: #4a494e;
 }
+.text_grey01 {
+  color: #46484b;
+}
+.text_grey02 {
+  color: #58595b;
+}
 /* ==========================================header-section===================================== */
 
 /* ==========================================nav-tab============================================ */
+.gradient_bg {
+  opacity: 0;
+  width: 8px;
+  height: 100%;
+}
+.navpill:hover .gradient_bg {
+  background: linear-gradient(97.1deg, #d0006f 4.95%, #0055b2 94.87%);
+  opacity: 1;
+  border-radius: 8px 0px 0px 8px;
+  padding-left: 8px;
+}
 .tabbtn {
+  border-radius: 0px 8px 8px 0px;
+  padding: 25px 38px 25px 38px;
+  border: none;
+  max-width: 422px;
+}
+.navpill:hover .tabbtn {
   background: #f8dbeb;
-  border-left: 8px solid linear-gradient(97.1deg, #d0006f 4.95%, #0055b2 94.87%);
+}
+.max_w_430 {
+  max-width: 430px;
 }
 /* =========================================digital============================================= */
 .bg_pink {
   background: #f8dbeb;
 }
-
+.contact_btn {
+  padding: 17.5px 40.5px;
+  border-radius: 50px;
+  background: linear-gradient(97.1deg, #d0006f 4.95%, #0055b2 94.87%);
+}
+.contact_btn:hover {
+  box-shadow: 2px 5px 8px #d0006f;
+}
+/* ======================================footer-section=========================================== */
+.footer_link::after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 0;
+  background-color: #46484b;
+  transition: 0.3s;
+}
+.footer_link:hover::after {
+  width: 100%;
+}
+.email_input {
+  outline: none !important;
+  border: none !important;
+}
+.email_btn {
+  background: #e6f2ff;
+  border-radius: 22.5px;
+  padding: 4px 4px 4px 20px;
+  max-width: 234px;
+}
+::placeholder {
+  color: #58595b;
+  font-size: var(--font-xs);
+}
+.hr_line {
+  border-bottom: 0.5px solid #a9abaf;
+}
+.zoom_in:hover {
+  transform: scale(0.9);
+}
+.fb_icon {
+  height: 40px;
+  width: 41px;
+  border-radius: 50%;
+  border: 0.1px solid #bfbec5;
+}
+@media (min-width: 1440px) {
+  .custom_container {
+    max-width: 1194px !important;
+  }
+}
+@media (max-width: 1240px) {
+  .tabbtn {
+    padding: 25px 38px ;
+  }
+}
 @media (max-width: 991px) {
   .nav_bar {
     position: fixed;
@@ -123,9 +210,6 @@
   }
   .overflow_hidden {
     overflow: hidden !important;
-  }
-  .nav_bar > li > a:nth-last-child() {
-    font-size: 22px !important;
   }
   .left_neg_100 {
     left: -100%;
@@ -142,6 +226,9 @@
   .navline span {
     width: 40px;
     height: 4px;
-    border-radius: 3px;
+    border-radius: 10px;
+  }
+  .email_btn {
+    max-width: 100%;
   }
 }

@@ -65,8 +65,8 @@ export default function TrustedPartner() {
   };
   return (
     <>
-      <Container className="mb-5 pb-5">
-        <h2 className="fw-medium fs_md text_black02 lh_148 text-center mb-5 pb-2">
+      <Container className="my-5 py-5 custom_container">
+        <h2 className="fw-medium fs_md text_black02 lh_148 text-center my-5 pb-2">
           Our Trusted Partners
         </h2>
         <Slider
