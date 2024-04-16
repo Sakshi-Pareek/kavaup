@@ -6,6 +6,9 @@
   list-style-type: none !important;
   font-family: "Poppins", sans-serif !important;
 }
+::-webkit-scrollbar {
+  display: none;
+}
 /* ------------------------------------------ROOT--------------------------------------------------- */
 :root {
   /* ------font-size--- */
@@ -196,7 +199,15 @@
 }
 @media (max-width: 1240px) {
   .tabbtn {
-    padding: 25px 38px ;
+    padding: 23px;
+  }
+}
+@media (max-width: 1024px) {
+  .tabbtn {
+    padding: 18px;
+  }
+  :root {
+    --font-xxl: 44px;
   }
 }
 @media (max-width: 991px) {
@@ -230,5 +241,30 @@
   }
   .email_btn {
     max-width: 100%;
+  }
+}
+@media (max-width: 820px) {
+  :root {
+    --font-xs: 12px;
+    --font-s: 14px;
+    --font-sm: 16px;
+    --font-md: 22px;
+    --font-xlg: 28px;
+    --font-lg: 32px;
+    --font-xl: 36px;
+    --font-xxl: 40px;
+  }
+  .tabbtn {
+    padding: 14px;
+  }
+}
+@media (max-width: 576px) {
+  :root {
+    --font-lg: 30px;
+    --font-xl: 32px;
+    --font-xxl: 34px;
+  }
+  .max_w_80 {
+    max-width: 80px;
   }
 }

@@ -58,15 +58,15 @@ export default function TrustedPartner() {
       {
         breakpoint: 370,
         settings: {
-          slidesToShow: 1.5,
+          slidesToShow: 2,
         },
       },
     ],
   };
   return (
     <>
-      <Container className="my-5 py-5 custom_container">
-        <h2 className="fw-medium fs_md text_black02 lh_148 text-center my-5 pb-2">
+      <Container className="my-5 py-xl-5 py-lg-2 custom_container">
+        <h2 className="fw-medium fs_md text_black02 lh_148 text-center my-xl-5 my-4">
           Our Trusted Partners
         </h2>
         <Slider
@@ -74,7 +74,7 @@ export default function TrustedPartner() {
           {...settings}
         >
           {data.map((a, index) => (
-            <div>
+            <div className="mb-xl-3">
               <Image
                 src={a.image}
                 alt="cardimg"

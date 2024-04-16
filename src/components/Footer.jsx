@@ -14,8 +14,8 @@ export default function Footer() {
   const year = Dates.getFullYear();
   return (
     <>
-      <Container className="pt-4 custom_container">
-        <Row className="py-md-5 py-3 justify-content-between gap-4 hr_line">
+      <Container className="pt-xl-5 pt-lg-3 custom_container">
+        <Row className="py-xl-5 py-4 justify-content-between gap-4 hr_line">
           <Col className="d-lg-none d-block col-12">
             <div className="d-flex flex-column gap-md-3 gap-2 pb-1">
               <p className="fw-semibold fs_md text_black01 lh_117 mb-1">

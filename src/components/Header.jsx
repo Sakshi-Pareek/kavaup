@@ -19,7 +19,7 @@ export default function Header() {
   return (
     <>
       <Container className="custom_container">
-        <div className="d-flex justify-content-between align-items-center py-4 mt-3">
+        <div className="d-flex justify-content-between align-items-center py-xl-4 mt-3">
           <Link href={"/"}>
             <Logo />
           </Link>
@@ -75,14 +75,14 @@ export default function Header() {
             <span className="crl_3 bg-black transition"></span>
           </div>
         </div>
-        <div className="py-5 my-5">
+        <div className="py-lg-5 py-3 my-5">
           <h1 className="fs_xxl fw-semibold text_black02 text-center lh_125 mb-0">
             What we have solutions on{" "}
             <span className="d-lg-block">this platform</span>
           </h1>
         </div>
-        <Row className="justify-content-between">
-          <Col lg={5} className="d-flex flex-column gap-3">
+        <Row className="justify-content-between gap-lg-0 gap-4">
+          <Col lg={5} className="d-flex flex-lg-column flex-row gap-3 overflow-x-scroll">
             <div className="d-flex max_w_430 mb-xxl-1 cursor_pointer navpill">
               <div className="gradient_bg transition"></div>
               <div className="fw-semibold fs_md text_black02 lh_125 tabbtn transition w-100">
@@ -91,13 +91,13 @@ export default function Header() {
             </div>
             <div className="d-flex max_w_430 mb-xxl-1 cursor_pointer navpill">
               <div className="gradient_bg transition"></div>
-              <div className="fw-semibold fs_md text_black02 lh_125 tabbtn transition w-100">
+              <div className="fw-semibold fs_md text_black02 lh_125 tabbtn transition w-100 text-nowrap">
                 E-commerce
               </div>
             </div>
             <div className="d-flex max_w_430 mb-xxl-1 cursor_pointer navpill">
               <div className="gradient_bg transition"></div>
-              <div className="fw-semibold fs_md text_black02 lh_125 tabbtn transition w-100">
+              <div className="fw-semibold fs_md text_black02 lh_125 tabbtn transition w-100 text-nowrap">
                 Organized Communications
               </div>
             </div>
@@ -109,19 +109,19 @@ export default function Header() {
             </div>
             <div className="d-flex max_w_430 mb-xxl-1 cursor_pointer navpill">
               <div className="gradient_bg transition"></div>
-              <div className="fw-semibold fs_md text_black02 lh_125 tabbtn transition w-100">
+              <div className="fw-semibold fs_md text_black02 lh_125 tabbtn transition w-100 text-nowrap">
                 Streaming Video / Audio
               </div>
             </div>
             <div className="d-flex max_w_430 mb-xxl-1 cursor_pointer navpill">
               <div className="gradient_bg transition"></div>
-              <div className="fw-semibold fs_md text_black02 lh_125 tabbtn transition w-100">
+              <div className="fw-semibold fs_md text_black02 lh_125 tabbtn transition w-100 text-nowrap">
                 Social Media
               </div>
             </div>
             <div className="d-flex max_w_430 mb-xxl-1 cursor_pointer navpill">
               <div className="gradient_bg transition"></div>
-              <div className="fw-semibold fs_md text_black02 lh_125 tabbtn transition w-100">
+              <div className="fw-semibold fs_md text_black02 lh_125 tabbtn transition w-100 text-nowrap">
                 Photo / Video editing
               </div>
             </div>
@@ -133,25 +133,25 @@ export default function Header() {
             </div>
             <div className="d-flex max_w_430 mb-xxl-1 cursor_pointer navpill">
               <div className="gradient_bg transition"></div>
-              <div className="fw-semibold fs_md text_black02 lh_125 tabbtn w-100 transition">
+              <div className="fw-semibold fs_md text_black02 lh_125 tabbtn w-100 transition text-nowrap">
                 Offline with data sync
               </div>
             </div>
             <div className="d-flex max_w_430 mb-xxl-1 navpill">
               <div className="gradient_bg transition"></div>
-              <div className="fw-semibold fs_md text_black02 lh_125 tabbtn w-100 transition">
+              <div className="fw-semibold fs_md text_black02 lh_125 tabbtn w-100 transition text-nowrap">
                 Bluetooth
               </div>
             </div>
           </Col>
           <Col lg={7}>
-            <div className="ps-xxl-5 ps-xl-4">
+            <div className="ps-lg-5">
               <Image
                 src="/assets/images/png/setupaccount.png"
                 alt="account"
                 width={605}
                 height={490}
-                className="mb-4 w-100"
+                className="mb-4 w-100 h-100"
               />
               <p className="fw-semibold fs_xlg text_black02 lh_125 pe-xxl-5 pt-2">
                 Create a business app for your online platform.

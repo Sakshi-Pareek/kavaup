@@ -1,6 +1,6 @@
 export const Logo = () => {
   return (
-    <svg
+    <svg className="max_w_80"
       width="120"
       height="64"
       viewBox="0 0 120 64"
