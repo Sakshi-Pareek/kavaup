@@ -4,7 +4,10 @@ import { Col, Container, Row } from "react-bootstrap";
 export default function Digital() {
   return (
     <>
-      <Container className="bg_pink my-lg-5 my-4 pt-lg-5 pb-lg-0 py-5 custom_container">
+      <Container
+        className="bg_pink my-lg-5 my-4 pt-lg-5 pb-lg-0 py-5 custom_container"
+        id="contact"
+      >
         <Row className="justify-content-around gap-lg-0 gap-5 mt-3">
           <Col lg={3} className="text-lg-start text-center">
             <Image

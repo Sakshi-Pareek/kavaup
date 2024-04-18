@@ -29,32 +29,65 @@ export default function Header() {
             } d-flex flex-lg-row flex-column list-unstyled gap-4 align-items-center justify-content-lg-between justify-content-center mb-0 pe-0 nav_bar transition`}
           >
             <Link
-              href={"#home"}
+              href={"/"}
               onClick={() => setShow(!show)}
               className="fw-mediun text_black01 fs_sm lh_122 nav_link"
             >
               Home
             </Link>
             <Link
-              href={"#apps"}
+              href={"/"}
               onClick={() => setShow(!show)}
-              className="fw-mediun text_black01 fs_sm lh_122 nav_link"
+              className="fw-mediun text_black01 fs_sm lh_122 nav_link position-relative"
             >
               Apps <UpdownArrow />
+              <ul className="drop_down bg-white ps-0 mb-0 d-flex flex-column position-absolute transition">
+                <li className="fw-normal fs_s text_grey lh_122 drop_down_link transition">
+                  Type here
+                </li>
+                <li className="fw-normal fs_s text_grey lh_122 drop_down_link transition text-nowrap">
+                  Android Apps
+                </li>
+                <li className="fw-normal fs_s text_grey lh_122 drop_down_link transition text-nowrap">
+                  Our process
+                </li>
+                <li className="fw-normal fs_s text_grey lh_122 drop_down_link transition text-nowrap">
+                  How we can help
+                </li>
+              </ul>
             </Link>
             <Link
-              href={"#solution"}
+              href={"/"}
               onClick={() => setShow(!show)}
-              className="fw-mediun text_black01 fs_sm lh_122 nav_link"
+              className="fw-mediun text_black01 fs_sm lh_122 nav_link position-relative"
             >
               Solutions <UpdownArrow />
+              <ul className="drop_down bg-white ps-0 mb-0 d-flex flex-column position-absolute transition">
+                <li className="fw-normal fs_s text_grey lh_122 drop_down_link transition">
+                  Type here
+                </li>
+                <li className="fw-normal fs_s text_grey lh_122 drop_down_link transition text-nowrap">
+                  Android Apps
+                </li>
+                <li className="fw-normal fs_s text_grey lh_122 drop_down_link transition text-nowrap">
+                  Our process
+                </li>
+              </ul>
             </Link>
             <Link
-              href={"#service"}
+              href={"/"}
               onClick={() => setShow(!show)}
-              className="fw-mediun text_black01 fs_sm lh_122 nav_link"
+              className="fw-mediun text_black01 fs_sm lh_122 nav_link position-relative"
             >
               Services <UpdownArrow />
+              <ul className="drop_down bg-white ps-0 mb-0 d-flex flex-column position-absolute transition">
+                <li className="fw-normal fs_s text_grey lh_122 drop_down_link transition">
+                  Type here
+                </li>
+                <li className="fw-normal fs_s text_grey lh_122 drop_down_link transition text-nowrap">
+                  Android Apps
+                </li>
+              </ul>
             </Link>
             <Link
               href={"#contact"}
@@ -68,7 +101,7 @@ export default function Header() {
             onClick={() => setShow(!show)}
             className={`${
               show ? "" : "cross transition"
-            } navline d-lg-none d-flex bg-transparent flex-column gap-2 justify-content-center align-items-center position-relative px-lg-0 px-4 top-0 z_4`}
+            } navline d-lg-none d-flex bg-transparent flex-column gap-2 justify-content-center align-items-center position-relative px-lg-0 px-4 top-0 z_4 cursor_pointer`}
           >
             <span className="crl_1 bg-black transition"></span>
             <span className="crl_2 bg-black transition"></span>
@@ -82,7 +115,10 @@ export default function Header() {
           </h1>
         </div>
         <Row className="justify-content-between gap-lg-0 gap-4">
-          <Col lg={5} className="d-flex flex-lg-column flex-row gap-3 overflow-x-scroll">
+          <Col
+            lg={5}
+            className="d-flex flex-lg-column flex-row gap-3 overflow-x-scroll"
+          >
             <div className="d-flex max_w_430 mb-xxl-1 cursor_pointer navpill">
               <div className="gradient_bg transition"></div>
               <div className="fw-semibold fs_md text_black02 lh_125 tabbtn transition w-100">

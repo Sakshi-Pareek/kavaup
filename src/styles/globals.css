@@ -113,8 +113,32 @@
 .text_grey02 {
   color: #58595b;
 }
-/* ==========================================header-section===================================== */
+/* ==========================================header============================================ */
 
+.drop_down {
+  opacity: 0;
+  transform: translate(-20%, 2px);
+  gap: 2px;
+  width: 220px;
+  padding: 24px 0 45px;
+  border: 1.5px solid #d0006f;
+  border-radius: 4px;
+  box-shadow: 0px 15px 30px 0px #0000001a;
+}
+.nav_link:hover .drop_down {
+  opacity: 1;
+}
+.nav_link:hover .icon_rotate {
+  transform: rotate(180deg);
+}
+.drop_down_link {
+  padding: 11px 10px 10px 53.51px;
+  border-left: 4.51px solid #ffffff;
+}
+.drop_down_link:hover {
+  background: #f8dbeb;
+  border-left: 4.51px solid #d0006f;
+}
 /* ==========================================nav-tab============================================ */
 .gradient_bg {
   opacity: 0;
@@ -201,6 +225,15 @@
   .tabbtn {
     padding: 23px;
   }
+  .drop_down {
+    gap: 0px;
+    width: 160px;
+    padding: 0;
+  }
+  .drop_down_link {
+    padding: 10px;
+    border-left: 4.51px solid #ffffff;
+  }
 }
 @media (max-width: 1024px) {
   .tabbtn {
@@ -214,7 +247,7 @@
   .nav_bar {
     position: fixed;
     z-index: 4 !important;
-    background: linear-gradient(250deg, #35d3ff -0.64%, #a963fb 103.6%);
+    background: #f8dbeb;
     min-height: 100vh;
     top: 0 !important;
     width: 100%;
@@ -241,6 +274,12 @@
   }
   .email_btn {
     max-width: 100%;
+  }
+  .drop_down {
+    opacity: 0 !important;
+  }
+  .nav_link .icon_rotate {
+    display: none;
   }
 }
 @media (max-width: 820px) {

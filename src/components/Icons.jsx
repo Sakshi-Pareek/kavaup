@@ -169,7 +169,7 @@ export const Footerlogo = () => {
 export const UpdownArrow = () => {
   return (
     <svg
-      className="ml-2"
+      className="ml-2 icon_rotate transition"
       width="16"
       height="16"
       viewBox="0 0 16 16"

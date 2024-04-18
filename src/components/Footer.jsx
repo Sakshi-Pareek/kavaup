@@ -115,7 +115,7 @@ export default function Footer() {
               </Link>
               <Link
                 href={
-                  "https://www.google.com/maps/@29.2904069,76.0389249,8z?entry=ttu"
+                  "https://www.google.com/maps/@29.2904069,76.0389249,8z?entry=ttu" 
                 }
                 className="fw-normal fs_sm text_grey01"
               >
