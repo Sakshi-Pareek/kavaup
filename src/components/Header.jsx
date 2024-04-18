@@ -23,7 +23,7 @@ export default function Header() {
   return (
     <>
       <Container className="custom_container">
-        <div className="d-flex justify-content-between align-items-center py-xl-4 mt-3">
+        <div className="d-flex justify-content-between align-items-center py-xl-4 mt-xl-0 mt-3">
           <Link href={"/"}>
             <Logo />
           </Link>
@@ -42,7 +42,7 @@ export default function Header() {
             <Link
               href={"/"}
               onClick={() => setShow(!show)}
-              className="fw-mediun text_black01 fs_sm lh_122 nav_link position-relative"
+              className="fw-mediun text_black01 fs_sm lh_122 nav_link position-relative transition"
             >
               Apps <UpdownArrow />
               <ul className="drop_down bg-white ps-0 mb-0 d-flex flex-column position-absolute transition">

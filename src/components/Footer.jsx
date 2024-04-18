@@ -29,7 +29,7 @@ export default function Footer() {
                 />
                 <SendBtn />
               </div>
-              <div className="d-flex gap-3 mt-3">
+              <div className="d-flex gap-3 mt-lg-3 pt-md-0 pt-2">
                 <a
                   href="https://www.facebook.com/"
                   target="_blank"
@@ -61,7 +61,7 @@ export default function Footer() {
               </div>
             </div>
           </Col>
-          <Col sm={2} xs={5}>
+          <Col lg={2} sm={3} xs={5}>
             <div className="d-flex flex-column gap-md-3 gap-2 pb-1">
               <p className="fw-semibold fs_md text_black01 lh_117 mb-1">
                 Company
@@ -100,7 +100,7 @@ export default function Footer() {
               </Link>
             </div>
           </Col>
-          <Col sm={3} xs={12}>
+          <Col md={3} sm={4} xs={12}>
             <div className="d-flex flex-column gap-md-3 gap-2 pb-1">
               <p className="fw-semibold fs_md text_black01 lh_117 mb-1">
                 Contact

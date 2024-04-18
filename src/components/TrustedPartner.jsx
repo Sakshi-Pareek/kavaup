@@ -70,11 +70,11 @@ export default function TrustedPartner() {
           Our Trusted Partners
         </h2>
         <Slider
-          className="text-[30px] font-bold w-full outline-none"
+          className="text-[30px] font-bold w-full outline-none mb-xl-5"
           {...settings}
         >
           {data.map((a, index) => (
-            <div className="mb-xl-3">
+            <div>
               <Image
                 src={a.image}
                 alt="cardimg"

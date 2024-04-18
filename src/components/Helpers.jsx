@@ -13,10 +13,10 @@ export default function Helpers(props) {
           height={490}
           className="mb-4 w-100 h-100"
         />
-        <p className="fw-semibold fs_xlg text_black02 lh_125 pe-xxl-5 pt-2">
+        <p className="fw-semibold fs_xlg text_black02 lh_125 pe-xxl-5 pt-2 text-lg-start text-center">
           Create a <span>{props.heading} </span> app for your online platform.
         </p>
-        <p className="text_grey fw-normal fs_sm lh_178 pe-xxl-5 mb-xxl-4 mb-3 pb-xxl-2">
+        <p className="text_grey fw-normal fs_sm lh_178 pe-xxl-5 mb-xxl-4 mb-3 pb-xxl-2 text-lg-start text-center">
           Take your <span>{props.content} </span> to a new level by creating an app with an online
           platform.
         </p>
