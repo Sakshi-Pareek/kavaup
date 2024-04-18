@@ -1,9 +1,9 @@
 "use client";
-import Image from "next/image";
 import React, { useEffect, useState } from "react";
-import { Logo, Tickicon, UpdownArrow } from "./Icons";
+import { Logo, UpdownArrow } from "./Icons";
 import { Col, Container, Row } from "react-bootstrap";
 import Link from "next/link";
+import Helpers from "./Helpers";
 
 export default function Header() {
   const [show, setShow] = useState(true);
@@ -16,6 +16,10 @@ export default function Header() {
       document.body.classList.remove("overflow_hidden");
     }
   });
+  const [activeTab, setActiveTab] = useState("Business");
+  const handleTabClick = (tab) => {
+    setActiveTab(tab);
+  };
   return (
     <>
       <Container className="custom_container">
@@ -117,108 +121,132 @@ export default function Header() {
         <Row className="justify-content-between gap-lg-0 gap-4">
           <Col
             lg={5}
-            className="d-flex flex-lg-column flex-row gap-3 overflow-x-scroll"
+            className="d-flex flex-lg-column flex-row justify-content-between gap-2 overflow-x-scroll"
           >
-            <div className="d-flex max_w_430 mb-xxl-1 cursor_pointer navpill">
-              <div className="gradient_bg transition"></div>
-              <div className="fw-semibold fs_md text_black02 lh_125 tabbtn transition w-100">
-                Business
-              </div>
-            </div>
-            <div className="d-flex max_w_430 mb-xxl-1 cursor_pointer navpill">
-              <div className="gradient_bg transition"></div>
-              <div className="fw-semibold fs_md text_black02 lh_125 tabbtn transition w-100 text-nowrap">
-                E-commerce
-              </div>
-            </div>
-            <div className="d-flex max_w_430 mb-xxl-1 cursor_pointer navpill">
-              <div className="gradient_bg transition"></div>
-              <div className="fw-semibold fs_md text_black02 lh_125 tabbtn transition w-100 text-nowrap">
-                Organized Communications
-              </div>
-            </div>
-            <div className="d-flex max_w_430 mb-xxl-1 cursor_pointer navpill">
-              <div className="gradient_bg transition"></div>
-              <div className="fw-semibold fs_md text_black02 lh_125 tabbtn transition w-100">
-                Chat
-              </div>
-            </div>
-            <div className="d-flex max_w_430 mb-xxl-1 cursor_pointer navpill">
-              <div className="gradient_bg transition"></div>
-              <div className="fw-semibold fs_md text_black02 lh_125 tabbtn transition w-100 text-nowrap">
-                Streaming Video / Audio
-              </div>
-            </div>
-            <div className="d-flex max_w_430 mb-xxl-1 cursor_pointer navpill">
-              <div className="gradient_bg transition"></div>
-              <div className="fw-semibold fs_md text_black02 lh_125 tabbtn transition w-100 text-nowrap">
-                Social Media
-              </div>
-            </div>
-            <div className="d-flex max_w_430 mb-xxl-1 cursor_pointer navpill">
-              <div className="gradient_bg transition"></div>
-              <div className="fw-semibold fs_md text_black02 lh_125 tabbtn transition w-100 text-nowrap">
-                Photo / Video editing
-              </div>
-            </div>
-            <div className="d-flex max_w_430 mb-xxl-1 cursor_pointer navpill">
-              <div className="gradient_bg transition"></div>
-              <div className="fw-semibold fs_md text_black02 lh_125 tabbtn transition w-100">
-                Maps
-              </div>
-            </div>
-            <div className="d-flex max_w_430 mb-xxl-1 cursor_pointer navpill">
-              <div className="gradient_bg transition"></div>
-              <div className="fw-semibold fs_md text_black02 lh_125 tabbtn w-100 transition text-nowrap">
-                Offline with data sync
-              </div>
-            </div>
-            <div className="d-flex max_w_430 mb-xxl-1 navpill">
-              <div className="gradient_bg transition"></div>
-              <div className="fw-semibold fs_md text_black02 lh_125 tabbtn w-100 transition text-nowrap">
-                Bluetooth
-              </div>
-            </div>
+            <button
+              className={`fw-semibold fs_md text_black02 lh_125 transition w-100 text-start ${
+                activeTab === "Business" ? "tabbtn_hover" : "tabbtn"
+              }`}
+              onClick={() => handleTabClick("Business")}
+            >
+              Business
+            </button>
+            <button
+              className={`fw-semibold fs_md text_black02 lh_125 transition w-100 text-start text-nowrap ${
+                activeTab === "Commerce" ? "tabbtn_hover" : "tabbtn"
+              }`}
+              onClick={() => handleTabClick("Commerce")}
+            >
+              E-commerce
+            </button>
+            <button
+              className={`fw-semibold fs_md text_black02 lh_125 transition w-100 text-start text-nowrap ${
+                activeTab === "Communications" ? "tabbtn_hover" : "tabbtn"
+              }`}
+              onClick={() => handleTabClick("Communications")}
+            >
+              Organized Communications
+            </button>
+            <button
+              className={`fw-semibold fs_md text_black02 lh_125 transition w-100 text-start ${
+                activeTab === "Chat" ? "tabbtn_hover" : "tabbtn"
+              }`}
+              onClick={() => handleTabClick("Chat")}
+            >
+              Chat
+            </button>
+            <button
+              className={`fw-semibold fs_md text_black02 lh_125 transition w-100 text-start text-nowrap ${
+                activeTab === "Streaming" ? "tabbtn_hover" : "tabbtn"
+              }`}
+              onClick={() => handleTabClick("Streaming")}
+            >
+              Streaming Video / Audio
+            </button>
+            <button
+              className={`fw-semibold fs_md text_black02 lh_125 transition w-100 text-start text-nowrap ${
+                activeTab === "Media" ? "tabbtn_hover" : "tabbtn"
+              }`}
+              onClick={() => handleTabClick("Media")}
+            >
+              Social Media
+            </button>
+            <button
+              className={`fw-semibold fs_md text_black02 lh_125 transition w-100 text-start text-nowrap ${
+                activeTab === "Editing" ? "tabbtn_hover" : "tabbtn"
+              }`}
+              onClick={() => handleTabClick("Editing")}
+            >
+              Photo / Video editing
+            </button>
+            <button
+              className={`fw-semibold fs_md text_black02 lh_125 transition w-100 text-start ${
+                activeTab === "Maps" ? "tabbtn_hover" : "tabbtn"
+              }`}
+              onClick={() => handleTabClick("Maps")}
+            >
+              Maps
+            </button>
+            <button
+              className={`fw-semibold fs_md text_black02 lh_125 transition w-100 text-start text-nowrap ${
+                activeTab === "data" ? "tabbtn_hover" : "tabbtn"
+              }`}
+              onClick={() => handleTabClick("data")}
+            >
+              Offline with data sync
+            </button>
+            <button
+              className={`fw-semibold fs_md text_black02 lh_125 transition w-100 text-start ${
+                activeTab === "Bluetooth" ? "tabbtn_hover" : "tabbtn"
+              }`}
+              onClick={() => handleTabClick("Bluetooth")}
+            >
+              Bluetooth
+            </button>
           </Col>
           <Col lg={7}>
-            <div className="ps-lg-5">
-              <Image
-                src="/assets/images/png/setupaccount.png"
-                alt="account"
-                width={605}
-                height={490}
-                className="mb-4 w-100 h-100"
-              />
-              <p className="fw-semibold fs_xlg text_black02 lh_125 pe-xxl-5 pt-2">
-                Create a business app for your online platform.
-              </p>
-              <p className="text_grey fw-normal fs_sm lh_178 pe-xxl-5 mb-xxl-4 mb-3 pb-xxl-2">
-                Take your business to a new level by creating an app with an
-                online platform.
-              </p>
-              <ul className="d-flex flex-column gap-xxl-3 gap-2 ps-0 mb-0">
-                <li className="fw-normal fs_sm text_grey lh_178 d-flex gap-3">
-                  <Tickicon />
-                  Mobile App Can Increase Sales.
-                </li>
-                <li className="fw-normal fs_sm text_grey lh_178 d-flex gap-3">
-                  <Tickicon />
-                  Compete with Larger Businesses.
-                </li>
-                <li className="fw-normal fs_sm text_grey lh_178 d-flex gap-3">
-                  <Tickicon />
-                  Simplify the Buyer Journey.
-                </li>
-                <li className="fw-normal fs_sm text_grey lh_178 d-flex gap-3">
-                  <Tickicon />
-                  Build Customer Loyalty
-                </li>
-                <li className="fw-normal fs_sm text_grey lh_178 d-flex gap-3">
-                  <Tickicon />
-                  Create a Direct Marketing Channel
-                </li>
-              </ul>
-            </div>
+            {activeTab === "Business" && (
+              <Helpers heading="business" content="business"></Helpers>
+            )}
+            {activeTab === "Commerce" && (
+              <Helpers heading="e-commerce" content="e-commerce"></Helpers>
+            )}
+            {activeTab === "Communications" && (
+              <Helpers
+                heading="communications"
+                content="organized communications"
+              ></Helpers>
+            )}
+            {activeTab === "Chat" && (
+              <Helpers heading="chat" content="chat"></Helpers>
+            )}
+            {activeTab === "Streaming" && (
+              <Helpers
+                heading="streaming video / audio"
+                content="streaming video / audio"
+              ></Helpers>
+            )}
+            {activeTab === "Media" && (
+              <Helpers heading="social media" content="social media"></Helpers>
+            )}
+            {activeTab === "Editing" && (
+              <Helpers
+                heading="photo / video editing"
+                content="photo / video editing"
+              ></Helpers>
+            )}
+            {activeTab === "Maps" && (
+              <Helpers heading="map" content="map"></Helpers>
+            )}
+            {activeTab === "data" && (
+              <Helpers
+                heading="offline with data sync"
+                content="offline with data sync"
+              ></Helpers>
+            )}
+            {activeTab === "Bluetooth" && (
+              <Helpers heading="bluetooth" content="bluetooth"></Helpers>
+            )}
           </Col>
         </Row>
       </Container>

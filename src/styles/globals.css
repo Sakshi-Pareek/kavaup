@@ -70,18 +70,6 @@
 .lh_170 {
   line-height: 170%;
 }
-.lh_136 {
-  line-height: 136%;
-}
-.lh_150 {
-  line-height: 150%;
-}
-.lh_167 {
-  line-height: 167%;
-}
-.lh_134 {
-  line-height: 134%;
-}
 .opacity_80 {
   opacity: 80%;
 }
@@ -113,7 +101,7 @@
 .text_grey02 {
   color: #58595b;
 }
-/* ==========================================header============================================ */
+/* ==========================================header-section============================================ */
 
 .drop_down {
   opacity: 0;
@@ -140,30 +128,26 @@
   border-left: 4.51px solid #d0006f;
 }
 /* ==========================================nav-tab============================================ */
-.gradient_bg {
-  opacity: 0;
-  width: 8px;
-  height: 100%;
-}
-.navpill:hover .gradient_bg {
-  background: linear-gradient(97.1deg, #d0006f 4.95%, #0055b2 94.87%);
-  opacity: 1;
-  border-radius: 8px 0px 0px 8px;
-  padding-left: 8px;
-}
 .tabbtn {
-  border-radius: 0px 8px 8px 0px;
+  background: transparent;
+  border-radius: 8px;
   padding: 25px 38px 25px 38px;
   border: none;
   max-width: 422px;
+  border-left: 8px solid transparent;
 }
-.navpill:hover .tabbtn {
+.tabbtn_hover {
+  border-radius: 8px;
+  padding: 25px 38px 25px 38px;
+  border: none;
+  max-width: 422px;
   background: #f8dbeb;
+  border-left: 8px solid #d0006f;
 }
 .max_w_430 {
   max-width: 430px;
 }
-/* =========================================digital============================================= */
+/* =========================================digital-section============================================= */
 .bg_pink {
   background: #f8dbeb;
 }
@@ -293,7 +277,8 @@
     --font-xl: 36px;
     --font-xxl: 40px;
   }
-  .tabbtn {
+  .tabbtn,
+  .tabbtn_hover {
     padding: 14px;
   }
 }
