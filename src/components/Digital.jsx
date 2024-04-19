@@ -18,22 +18,33 @@ export default function Digital() {
             />
           </Col>
           <Col lg={6} className="text-lg-start text-center">
-            <h3 className="fw-semibold fs_xl text_black01 mb-lg-4 pb-lg-2 mb-sm-3 mb-2 pt-lg-3 lh_125">
+            <h3
+              className="fw-semibold fs_xl text_black01 mb-lg-4 pb-lg-2 mb-sm-3 mb-2 pt-lg-3 lh_125"
+              data-aos="fade-down-left"
+            >
               Take the Next Step in Your Digital Transformation
             </h3>
-            <p className="fw-normal fs_sm text_black01 pe-xl-5 me-xl-5 lh_200 mb-sm-3 mb-2">
+            <p
+              className="fw-normal fs_sm text_black01 pe-xl-5 me-xl-5 lh_200 mb-sm-3 mb-2"
+              data-aos="fade-down-left"
+            >
               Concentrate on your brand, business, or project while we handle
               the software development.
             </p>
-            <p className="fw-medium text_blue fs_sm lh_200 mb-lg-4 pb-lg-2 mb-sm-3 mb-2">
+            <p
+              className="fw-medium text_blue fs_sm lh_200 mb-lg-4 pb-lg-2 mb-sm-3 mb-2"
+              data-aos="fade-down-left"
+            >
               Get in touch with Kava Up to learn more!
             </p>
-            <a
-              href=""
-              className="text-white fs_sm fw-mediun contact_btn d-inline-block transition "
-            >
-              Contact Us
-            </a>
+            <div data-aos="fade-down-left">
+              <a
+                href="#"
+                className="text-white fs_sm fw-mediun contact_btn d-inline-block transition "
+              >
+                Contact Us
+              </a>
+            </div>
           </Col>
         </Row>
       </Container>

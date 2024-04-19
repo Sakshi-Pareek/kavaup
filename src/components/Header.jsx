@@ -30,7 +30,7 @@ export default function Header() {
           <div
             className={`${
               show ? "left_neg_100" : "start-0"
-            } d-flex flex-lg-row flex-column list-unstyled gap-4 align-items-center justify-content-lg-between justify-content-center mb-0 pe-0 nav_bar transition`}
+            } d-flex flex-lg-row flex-column list-unstyled gap-4 align-items-center justify-content-lg-between justify-content-center mb-0 pe-0 nav_bar transition z_4`}
           >
             <Link
               href={"/"}
@@ -118,7 +118,7 @@ export default function Header() {
             <span className="d-lg-block">this platform</span>
           </h1>
         </div>
-        <Row className="justify-content-between gap-lg-0 gap-4">
+        <Row className="justify-content-between gap-lg-0 gap-4" data-aos="fade-up">
           <Col
             lg={5}
             className="d-flex flex-lg-column flex-row justify-content-between gap-2 overflow-x-scroll"

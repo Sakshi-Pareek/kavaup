@@ -1,6 +1,7 @@
 export const Logo = () => {
   return (
-    <svg className="max_w_80"
+    <svg
+      className="max_w_80"
       width="120"
       height="64"
       viewBox="0 0 120 64"
@@ -189,7 +190,8 @@ export const UpdownArrow = () => {
 };
 export const SendBtn = () => {
   return (
-    <svg className="zoom_in transition cursor_pointer"
+    <svg
+      className="zoom_in transition cursor_pointer"
       width="38"
       height="37"
       viewBox="0 0 38 37"
@@ -206,7 +208,8 @@ export const SendBtn = () => {
 };
 export const Fbicon = () => {
   return (
-    <svg className="zoom_in transition fb_icon"
+    <svg
+      className="zoom_in transition fb_icon"
       width="41"
       height="40"
       viewBox="0 0 41 40"
@@ -226,7 +229,8 @@ export const Fbicon = () => {
 };
 export const Youtube = () => {
   return (
-    <svg className="zoom_in transition"
+    <svg
+      className="zoom_in transition"
       width="41"
       height="40"
       viewBox="0 0 41 40"
@@ -261,7 +265,8 @@ export const Youtube = () => {
 };
 export const Twitter = () => {
   return (
-    <svg className="zoom_in transition"
+    <svg
+      className="zoom_in transition"
       width="41"
       height="40"
       viewBox="0 0 41 40"
@@ -289,7 +294,8 @@ export const Twitter = () => {
 };
 export const Instagram = () => {
   return (
-    <svg className="zoom_in transition"
+    <svg
+      className="zoom_in transition"
       width="41"
       height="40"
       viewBox="0 0 41 40"
@@ -356,6 +362,20 @@ export const Tickicon = () => {
           <stop offset="1" stop-color="#0055B2" />
         </linearGradient>
       </defs>
+    </svg>
+  );
+};
+export const BackToTop = () => {
+  return (
+    <svg width="16" height="16" fill="#FFFFFF" viewBox="0 0 16 16">
+      <path
+        fillRule="evenodd"
+        d="M7.646 2.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 3.707 2.354 9.354a.5.5 0 1 1-.708-.708l6-6z"
+      ></path>
+      <path
+        fillRule="evenodd"
+        d="M7.646 6.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 7.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"
+      ></path>
     </svg>
   );
 };
