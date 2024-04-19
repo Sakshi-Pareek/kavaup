@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import { Logo, UpdownArrow } from "./Icons";
+import { Gradientline, Logo, UpdownArrow } from "./Icons";
 import { Col, Container, Row } from "react-bootstrap";
 import Link from "next/link";
 import Helpers from "./Helpers";
@@ -118,90 +118,97 @@ export default function Header() {
             <span className="d-lg-block">this platform</span>
           </h1>
         </div>
-        <Row className="justify-content-between gap-lg-0 gap-4" data-aos="fade-up">
+        <Row
+          className="justify-content-between gap-lg-0 gap-4"
+          data-aos="fade-up"
+        >
           <Col
             lg={5}
             className="d-flex flex-lg-column flex-row justify-content-between gap-2 overflow-x-scroll"
           >
             <button
-              className={`fw-semibold fs_md text_black02 lh_125 transition w-100 text-start ${
+              className={`fw-semibold fs_md text_black02 lh_125 transition w-100 text-start d-flex align-items-center pe-4 ${
                 activeTab === "Business" ? "tabbtn_hover" : "tabbtn"
               }`}
               onClick={() => handleTabClick("Business")}
             >
-              Business
+              <Gradientline /> Business
             </button>
             <button
-              className={`fw-semibold fs_md text_black02 lh_125 transition w-100 text-start text-nowrap ${
+              className={`fw-semibold fs_md text_black02 lh_125 transition w-100 text-start d-flex align-items-center pe-4 text-nowrap ${
                 activeTab === "Commerce" ? "tabbtn_hover" : "tabbtn"
               }`}
               onClick={() => handleTabClick("Commerce")}
             >
+              <Gradientline />
               E-commerce
             </button>
             <button
-              className={`fw-semibold fs_md text_black02 lh_125 transition w-100 text-start text-nowrap ${
+              className={`fw-semibold fs_md text_black02 lh_125 transition w-100 text-start d-flex align-items-center pe-4 text-nowrap ${
                 activeTab === "Communications" ? "tabbtn_hover" : "tabbtn"
               }`}
               onClick={() => handleTabClick("Communications")}
             >
+              <Gradientline />
               Organized Communications
             </button>
             <button
-              className={`fw-semibold fs_md text_black02 lh_125 transition w-100 text-start ${
+              className={`fw-semibold fs_md text_black02 lh_125 transition w-100 text-start d-flex align-items-center pe-4 ${
                 activeTab === "Chat" ? "tabbtn_hover" : "tabbtn"
               }`}
               onClick={() => handleTabClick("Chat")}
             >
+              <Gradientline />
               Chat
             </button>
             <button
-              className={`fw-semibold fs_md text_black02 lh_125 transition w-100 text-start text-nowrap ${
+              className={`fw-semibold fs_md text_black02 lh_125 transition w-100 text-start d-flex align-items-center pe-4 text-nowrap ${
                 activeTab === "Streaming" ? "tabbtn_hover" : "tabbtn"
               }`}
               onClick={() => handleTabClick("Streaming")}
             >
+              <Gradientline />
               Streaming Video / Audio
             </button>
             <button
-              className={`fw-semibold fs_md text_black02 lh_125 transition w-100 text-start text-nowrap ${
+              className={`fw-semibold fs_md text_black02 lh_125 transition w-100 text-start d-flex align-items-center pe-4 text-nowrap ${
                 activeTab === "Media" ? "tabbtn_hover" : "tabbtn"
               }`}
               onClick={() => handleTabClick("Media")}
             >
-              Social Media
+              <Gradientline /> Social Media
             </button>
             <button
-              className={`fw-semibold fs_md text_black02 lh_125 transition w-100 text-start text-nowrap ${
+              className={`fw-semibold fs_md text_black02 lh_125 transition w-100 text-start d-flex align-items-center pe-4 text-nowrap ${
                 activeTab === "Editing" ? "tabbtn_hover" : "tabbtn"
               }`}
               onClick={() => handleTabClick("Editing")}
             >
-              Photo / Video editing
+              <Gradientline /> Photo / Video editing
             </button>
             <button
-              className={`fw-semibold fs_md text_black02 lh_125 transition w-100 text-start ${
+              className={`fw-semibold fs_md text_black02 lh_125 transition w-100 text-start d-flex align-items-center pe-4 ${
                 activeTab === "Maps" ? "tabbtn_hover" : "tabbtn"
               }`}
               onClick={() => handleTabClick("Maps")}
             >
-              Maps
+              <Gradientline /> Maps
             </button>
             <button
-              className={`fw-semibold fs_md text_black02 lh_125 transition w-100 text-start text-nowrap ${
+              className={`fw-semibold fs_md text_black02 lh_125 transition w-100 text-start d-flex align-items-center pe-4 text-nowrap ${
                 activeTab === "data" ? "tabbtn_hover" : "tabbtn"
               }`}
               onClick={() => handleTabClick("data")}
             >
-              Offline with data sync
+              <Gradientline /> Offline with data sync
             </button>
             <button
-              className={`fw-semibold fs_md text_black02 lh_125 transition w-100 text-start ${
+              className={`fw-semibold fs_md text_black02 lh_125 transition w-100 text-start d-flex align-items-center pe-4 ${
                 activeTab === "Bluetooth" ? "tabbtn_hover" : "tabbtn"
               }`}
               onClick={() => handleTabClick("Bluetooth")}
             >
-              Bluetooth
+              <Gradientline /> Bluetooth
             </button>
           </Col>
           <Col lg={7}>

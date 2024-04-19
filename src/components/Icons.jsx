@@ -379,3 +379,32 @@ export const BackToTop = () => {
     </svg>
   );
 };
+export const Gradientline = () => {
+  return (
+    <svg className="me-xl-5 me-3"
+      width="8"
+      height="80"
+      viewBox="0 0 8 80"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M0 8C0 3.58172 3.58172 0 8 0V80C3.58172 80 0 76.4183 0 72V8Z"
+        fill="url(#paint0_linear_13_9742)"
+      />
+      <defs>
+        <linearGradient
+          id="paint0_linear_13_9742"
+          x1="0.357143"
+          y1="7.09679"
+          x2="8.44597"
+          y2="7.1976"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stop-color="#D0006F" />
+          <stop offset="1" stop-color="#0055B2" />
+        </linearGradient>
+      </defs>
+    </svg>
+  );
+};
